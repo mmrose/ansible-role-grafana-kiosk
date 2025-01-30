@@ -3,6 +3,11 @@
   package:
     name: "{{ grafana_kiosk_dependencies }}"
     state: present
+    
+- name: Creates directory for auto-login config
+  ansible.builtin.file:
+    path: /etc/systemd/system/getty@tty1.service.d/
+    state: directory
 
 - name: "Configure auto-login for user {{ grafana_kiosk_user }} on tty1"
   template:
