@@ -55,7 +55,7 @@
 - name: Download grafana-kiosk
   get_url:
     dest: /home/{{ grafana_kiosk_user }}/grafana-kiosk/
-    url: https://github.com/grafana/grafana-kiosk/releases/download/v1.0.2/grafana-kiosk.linux.armv7
+    url: https://github.com/grafana/grafana-kiosk/releases/download/v1.0.9/grafana-kiosk.linux.armv7
     owner: "{{ grafana_kiosk_user }}"
     mode: '744'
 
