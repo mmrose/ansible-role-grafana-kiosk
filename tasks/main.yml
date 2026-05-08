@@ -58,6 +58,7 @@
     url: https://github.com/grafana/grafana-kiosk/releases/download/v1.0.12/grafana-kiosk.linux.armv7
     owner: "{{ grafana_kiosk_user }}"
     mode: '744'
+  when: true
 
 - name: Copy grafana-kiosk configuration file
   copy:
